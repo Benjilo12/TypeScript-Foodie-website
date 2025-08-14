@@ -32,7 +32,7 @@ export default function MobileNav({ closeNav, showNav }: Props) {
         {/* Close icon */}
         <CgClose
           onClick={closeNav}
-          className="absolute top-[0.7rem] right-[1.4rem] sm:h-8 w-6 h-6"
+          className="absolute top-[0.7rem] right-[1.4rem] sm:h-8 w-6 h-6 cursor-pointer"
         />
       </div>
     </div>
