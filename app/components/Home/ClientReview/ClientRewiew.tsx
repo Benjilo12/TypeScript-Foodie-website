@@ -26,11 +26,16 @@ const responsive = {
 export default function ClientRewiew() {
   return (
     <div className="pt-16 pb-10 text-center font-extrabold">
-      <h1 className="text-xl sm:text-2xl text-center font-extrabold">
+      <h1
+        className="text-xl sm:text-2xl text-center font-extrabold"
+        data-aos="fade-up "
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="50"
+      >
         {" "}
         What people say about us
       </h1>
-      <div className="mt-16 w-[80%] mx-auto">
+      <div data-aos="fade-up" className="mt-16 w-[80%] mx-auto">
         <Carousel
           showDots={true}
           responsive={responsive}

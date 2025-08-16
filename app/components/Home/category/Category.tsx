@@ -21,7 +21,10 @@ const categories = [
 export default function Category() {
   return (
     <div className="pt-5 pb-10">
-      <h1 className="text-xl sm:text-2xl text-center font-extrabold">
+      <h1
+        data-aos="fade-up"
+        className="text-xl sm:text-2xl text-center font-extrabold"
+      >
         Popular categories by food
       </h1>
       <div className="w-[80%] mx-auto mt-10">
@@ -30,7 +33,10 @@ export default function Category() {
             return (
               <span
                 key={i}
-                className="px-6 py-3 rounded-full cursor-pointer hover:bg-sky-600 dark:hover:bg-emerald-400 hover:text-white transition-all duration-300 bg-gray-100 dark:bg-gray-800 dark:text-white text-gray-900"
+                className="px-6 py-3 rounded-full cursor-pointer hover:bg-sky-600 dark:hover:bg-emerald-400 hover:text-white transition-all duration-300 bg-gray-300 dark:bg-gray-800 dark:text-white text-gray-900 font-extrabold"
+                data-aos="flip-right"
+                data-aos-delay="50"
+                data-aos-duration={i * 1000}
               >
                 {Category.name}
               </span>

@@ -4,7 +4,12 @@ import FeatureCard from "./FeatureCard";
 export default function Feature() {
   return (
     <div className="pt-15 pb-16">
-      <h1 className="text-xl sm:text-2xl text-center font-extrabold">
+      <h1
+        data-aos="fade-up "
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="50"
+        className="text-xl sm:text-2xl text-center font-extrabold"
+      >
         Meet our Quality Features
       </h1>
       <div className="w-[80%] mx-auto mt-16 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-10">

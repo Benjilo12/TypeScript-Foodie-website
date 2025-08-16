@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 
 type Props = {
   reviewTitle: string;
-  userName: string;
+  username: string;
   userImage: string;
   role: string;
 };
@@ -13,7 +13,7 @@ export default function ReviewCard({
   reviewTitle,
   role,
   userImage,
-  userName,
+  username,
 }: Props) {
   return (
     <div className="bg-gray-100  dark:bg-gray-900 p-6 rounded-lg shadow-md mr-4">
@@ -42,7 +42,7 @@ export default function ReviewCard({
           className="rounded-full"
         />
       </div>
-      <h1 className="text-lg font-bold">{userName}</h1>
+      <h1 className="text-lg font-bold">{username}</h1>
       <p className="text-sm sm:text-base">{role}</p>
     </div>
   );

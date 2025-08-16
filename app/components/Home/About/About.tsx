@@ -6,7 +6,7 @@ export default function About() {
     <div className="pt-16 pb-16">
       <div className="w-[80%]  mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Image content */}
-        <div>
+        <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
           <Image
             src="/images/a.png"
             width={800}
@@ -16,7 +16,7 @@ export default function About() {
           />
         </div>
         {/* Text content */}
-        <div>
+        <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-8 md:leading-12">
             We deliver our products as fast as superman can do
           </h1>

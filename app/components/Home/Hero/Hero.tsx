@@ -72,8 +72,13 @@ export default function Hero() {
             </a>
           </div>
         </div>
+
         {/* Image Content */}
-        <div className="mx-auto hidden xl:block">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="150"
+          className="mx-auto hidden xl:block"
+        >
           <Image src="/images/hero.png" alt="image" width={500} height={500} />
         </div>
       </div>

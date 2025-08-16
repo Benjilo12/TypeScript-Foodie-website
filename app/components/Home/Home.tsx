@@ -1,8 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import About from "./About/About";
 import Category from "./category/Category";
 import ClientRewiew from "./ClientReview/ClientRewiew";
@@ -12,21 +10,22 @@ import Hero from "./Hero/Hero";
 import HowitWork from "./HowitWorks/HowitWork";
 import MobileApp from "./MobileApp/MobileApp";
 import Restaurant from "./Restaurant/Restaurant";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 function Home() {
   useEffect(() => {
-    // Initialize AOS directly (no need for dynamic import)
-    AOS.init({
-      duration: 1000,
-      easing: "ease",
-      once: true,
-      anchorPlacement: "top-bottom",
-    });
-
-    // Refresh AOS when components load
-    AOS.refresh();
+    const initAOS = async () => {
+      await import("aos");
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        anchorPlacement: "top-bottom",
+      });
+    };
+    initAOS();
   }, []);
-
   return (
     <div className="overflow-hidden">
       <Hero />

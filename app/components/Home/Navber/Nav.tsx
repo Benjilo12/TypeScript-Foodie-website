@@ -39,7 +39,7 @@ export default function Nav({ openNav }: Props) {
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 cursor-pointer">
           <div className="w-10 h-10 bg-blue-950 dark:bg-white rounded-full flex items-center justify-center flex-col">
             <MdDeliveryDining className="w-6 h-6 text-white dark:text-black" />
           </div>

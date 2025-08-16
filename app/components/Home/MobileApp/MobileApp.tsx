@@ -14,10 +14,13 @@ export default function MobileApp() {
           width={800}
           height={800}
           className="object-cover"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
         />
 
         {/* Text content */}
-        <div>
+        <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
           <h1 className="text-2xl sm:text-4xl font-bold leading-8 sm:leading-12">
             Connecting our user with iOS & Android apps. Download from iTune &
             Play store

@@ -8,7 +8,11 @@ type Props = {
 
 export default function FeatureCard({ icon, title }: Props) {
   return (
-    <div>
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
       <Image
         src={icon}
         alt="icon"
@@ -16,8 +20,18 @@ export default function FeatureCard({ icon, title }: Props) {
         height={100}
         className="mx-auto object-contain"
       />
-      <h1 className="mt-8 text-lg font-bold text-center">{title}</h1>
-      <p className=" text-center sm:w-[80%] mx-auto text-gray-700 dark:text-gray-300 mt-3 font-medium">
+      <h1
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        className="mt-8 text-lg font-bold text-center"
+      >
+        {title}
+      </h1>
+      <p
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        className=" text-center sm:w-[80%] mx-auto text-gray-700 dark:text-gray-300 mt-3 font-medium"
+      >
         We&apos;re driven beyound just finishing the projects. We want to find
         smart solutions.
       </p>
